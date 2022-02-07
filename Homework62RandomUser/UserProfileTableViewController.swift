@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UserProfileTableViewController.swift
 //  Homework62RandomUser
 //
 //  Created by 黃柏嘉 on 2022/2/6.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UserProfileTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        
     }
 
-
+    
 }
-
