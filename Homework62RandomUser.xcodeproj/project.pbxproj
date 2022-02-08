@@ -12,6 +12,11 @@
 		D6B28CD727AFFE1C00BCEF7E /* UserProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B28CD627AFFE1C00BCEF7E /* UserProfileTableViewController.swift */; };
 		D6B28CD927B0A60400BCEF7E /* UserListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B28CD827B0A60400BCEF7E /* UserListController.swift */; };
 		D6B28CDB27B0A65A00BCEF7E /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B28CDA27B0A65A00BCEF7E /* RandomUser.swift */; };
+		D6B28CDD27B1077900BCEF7E /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B28CDC27B1077900BCEF7E /* UISearchBar+Extension.swift */; };
+		D6B28CDF27B150CD00BCEF7E /* RandomUserListTVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B28CDE27B150CD00BCEF7E /* RandomUserListTVC+Extension.swift */; };
+		D6B28CE127B2011200BCEF7E /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B28CE027B2011200BCEF7E /* Favorites.swift */; };
+		D6B28CE427B216C300BCEF7E /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B28CE327B216C300BCEF7E /* FavoritesTableViewController.swift */; };
+		D6B28CE627B217A300BCEF7E /* FavoritesItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B28CE527B217A300BCEF7E /* FavoritesItemTableViewCell.swift */; };
 		D6FA001E27AFF1EA00B88494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FA001D27AFF1EA00B88494 /* AppDelegate.swift */; };
 		D6FA002027AFF1EA00B88494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FA001F27AFF1EA00B88494 /* SceneDelegate.swift */; };
 		D6FA002527AFF1EB00B88494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FA002327AFF1EB00B88494 /* Main.storyboard */; };
@@ -26,6 +31,11 @@
 		D6B28CD627AFFE1C00BCEF7E /* UserProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTableViewController.swift; sourceTree = "<group>"; };
 		D6B28CD827B0A60400BCEF7E /* UserListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListController.swift; sourceTree = "<group>"; };
 		D6B28CDA27B0A65A00BCEF7E /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
+		D6B28CDC27B1077900BCEF7E /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extension.swift"; sourceTree = "<group>"; };
+		D6B28CDE27B150CD00BCEF7E /* RandomUserListTVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomUserListTVC+Extension.swift"; sourceTree = "<group>"; };
+		D6B28CE027B2011200BCEF7E /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		D6B28CE327B216C300BCEF7E /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		D6B28CE527B217A300BCEF7E /* FavoritesItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesItemTableViewCell.swift; sourceTree = "<group>"; };
 		D6FA001A27AFF1EA00B88494 /* Homework62RandomUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework62RandomUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FA001D27AFF1EA00B88494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6FA001F27AFF1EA00B88494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +57,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D6B28CE227B2160800BCEF7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D6B28CDA27B0A65A00BCEF7E /* RandomUser.swift */,
+				D6B28CE027B2011200BCEF7E /* Favorites.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D6B28CE727B2221100BCEF7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6FA003127AFF64000B88494 /* UserPhotoImageViw.swift */,
+				D6B28CE527B217A300BCEF7E /* FavoritesItemTableViewCell.swift */,
+				D6B28CD427AFFDDE00BCEF7E /* RandomUserItemTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D6B28CE827B2223100BCEF7E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6B28CE327B216C300BCEF7E /* FavoritesTableViewController.swift */,
+				D6B28CD827B0A60400BCEF7E /* UserListController.swift */,
+				D6B28CD227AFFD9300BCEF7E /* RandomUserListTableViewController.swift */,
+				D6B28CD627AFFE1C00BCEF7E /* UserProfileTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		D6FA001127AFF1EA00B88494 = {
 			isa = PBXGroup;
 			children = (
@@ -69,12 +109,11 @@
 				D6FA001D27AFF1EA00B88494 /* AppDelegate.swift */,
 				D6FA001F27AFF1EA00B88494 /* SceneDelegate.swift */,
 				D6FA002327AFF1EB00B88494 /* Main.storyboard */,
-				D6B28CD827B0A60400BCEF7E /* UserListController.swift */,
-				D6B28CDA27B0A65A00BCEF7E /* RandomUser.swift */,
-				D6B28CD427AFFDDE00BCEF7E /* RandomUserItemTableViewCell.swift */,
-				D6B28CD227AFFD9300BCEF7E /* RandomUserListTableViewController.swift */,
-				D6B28CD627AFFE1C00BCEF7E /* UserProfileTableViewController.swift */,
-				D6FA003127AFF64000B88494 /* UserPhotoImageViw.swift */,
+				D6B28CE227B2160800BCEF7E /* Models */,
+				D6B28CE727B2221100BCEF7E /* Views */,
+				D6B28CE827B2223100BCEF7E /* Controllers */,
+				D6B28CDC27B1077900BCEF7E /* UISearchBar+Extension.swift */,
+				D6B28CDE27B150CD00BCEF7E /* RandomUserListTVC+Extension.swift */,
 				D6FA002627AFF1F400B88494 /* Assets.xcassets */,
 				D6FA002827AFF1F400B88494 /* LaunchScreen.storyboard */,
 				D6FA002B27AFF1F400B88494 /* Info.plist */,
@@ -153,12 +192,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B28CDD27B1077900BCEF7E /* UISearchBar+Extension.swift in Sources */,
 				D6B28CD727AFFE1C00BCEF7E /* UserProfileTableViewController.swift in Sources */,
 				D6FA001E27AFF1EA00B88494 /* AppDelegate.swift in Sources */,
+				D6B28CE427B216C300BCEF7E /* FavoritesTableViewController.swift in Sources */,
 				D6B28CD327AFFD9300BCEF7E /* RandomUserListTableViewController.swift in Sources */,
 				D6B28CD527AFFDDE00BCEF7E /* RandomUserItemTableViewCell.swift in Sources */,
 				D6B28CDB27B0A65A00BCEF7E /* RandomUser.swift in Sources */,
 				D6FA003227AFF64000B88494 /* UserPhotoImageViw.swift in Sources */,
+				D6B28CE627B217A300BCEF7E /* FavoritesItemTableViewCell.swift in Sources */,
+				D6B28CE127B2011200BCEF7E /* Favorites.swift in Sources */,
+				D6B28CDF27B150CD00BCEF7E /* RandomUserListTVC+Extension.swift in Sources */,
 				D6B28CD927B0A60400BCEF7E /* UserListController.swift in Sources */,
 				D6FA002027AFF1EA00B88494 /* SceneDelegate.swift in Sources */,
 			);

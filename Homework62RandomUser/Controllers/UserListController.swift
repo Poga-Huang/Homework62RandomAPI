@@ -9,8 +9,10 @@ import Foundation
 import UIKit
 
 class UserListController{
+    
     static let shared = UserListController()
     
+    //抓資料
     func fetchRandomUser(completion:@escaping (Result<RandomUser,Error>)->()){
         guard let url = URL(string: "https://randomuser.me/api/?results=50") else {return}
         URLSession.shared.dataTask(with: url) { (data,response,error) in
@@ -26,7 +28,7 @@ class UserListController{
             }
         }.resume()
     }
-    
+    //下載圖片
     func fetchImage(url:URL,completion:@escaping(UIImage?)->()){
         URLSession.shared.dataTask(with: url) { (data,response,error) in
             if let data = data {

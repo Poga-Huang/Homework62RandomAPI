@@ -42,3 +42,12 @@ struct RandomUser:Codable{
     }
 }
 
+
+struct UserItem:Codable{
+    var gender:String
+    var name:RandomUser.Results.Name
+    var location:RandomUser.Results.Location
+    var email:String
+    var phone:String
+    var picture:RandomUser.Results.Picture
+}
