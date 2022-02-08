@@ -16,6 +16,7 @@ class FavoritesTableViewController: UITableViewController {
             Favorites.save(favorites)
         }
     }
+    
     var userItem:UserItem?
     
     override func viewDidLoad() {
